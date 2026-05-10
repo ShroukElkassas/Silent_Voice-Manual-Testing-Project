@@ -1,0 +1,525 @@
+{
+	"id": "5f417830-81e3-4a60-8a61-7caa490f8d2d",
+	"name": "Silent_Voice | v1",
+	"timestamp": "2026-04-22T18:46:00.523Z",
+	"collection_id": "37128076-b6d949de-c05b-4bbe-ba8e-07219e38404e",
+	"folder_id": 0,
+	"environment_id": "37128076-ad282f63-7c69-48c8-8517-02276d164b43",
+	"totalPass": 38,
+	"delay": "0",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-04-22T18:45:48.829Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a23dea24-0684-435a-acf6-fe550802a146",
+			"name": "/api/Auth/register",
+			"url": "http://silentvoice.runasp.net/api/Auth/register",
+			"time": 3067,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Token is null": true,
+				"Message is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is null": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3067
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Token is null": true,
+					"Message is correct": true
+				}
+			]
+		},
+		{
+			"id": "fdadade9-d832-48b5-9cf7-58497947d6c0",
+			"name": "confirm-email-fixed-otp",
+			"url": "http://silentvoice.runasp.net/api/Auth/confirm-email",
+			"time": 220,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"UserID matches registered userID": true,
+				"Email confirmed successfully!": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"UserID matches registered userID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email confirmed successfully!": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				220
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"UserID matches registered userID": true,
+					"Email confirmed successfully!": true
+				}
+			]
+		},
+		{
+			"id": "040fa4ed-3138-46d5-b170-52b38eb7ec92",
+			"name": "/api/Auth/login",
+			"url": "http://silentvoice.runasp.net/api/Auth/login",
+			"time": 537,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200": true,
+				"Token exists": true,
+				"Save token to environment": true,
+				"Message is correct": true
+			},
+			"testPassFailCounts": {
+				"Status is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token exists": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save token to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				537
+			],
+			"allTests": [
+				{
+					"Status is 200": true,
+					"Token exists": true,
+					"Save token to environment": true,
+					"Message is correct": true
+				}
+			]
+		},
+		{
+			"id": "9f205c99-607d-4dca-bfa7-155bce9b2917",
+			"name": "/api/Sign/save",
+			"url": "http://silentvoice.runasp.net/api/Sign/save",
+			"time": 915,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message exists": true,
+				"Response message is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message exists": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				915
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message exists": true,
+					"Response message is correct": true
+				}
+			]
+		},
+		{
+			"id": "6d752e74-a6c1-4e0e-ba0a-6c2eca1ea524",
+			"name": "/api/Sign/history",
+			"url": "http://silentvoice.runasp.net/api/Sign/history",
+			"time": 210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is an array": true,
+				"Check first item structure": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check first item structure": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is an array": true,
+					"Check first item structure": true
+				}
+			]
+		},
+		{
+			"id": "174bc184-2dd3-4d17-9f9a-56b5b9bd5b93",
+			"name": "/api/Sign/:id",
+			"url": "http://silentvoice.runasp.net/api/Sign/95",
+			"time": 152,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has required fields": true,
+				"Data types are correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data types are correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				152
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has required fields": true,
+					"Data types are correct": true
+				}
+			]
+		},
+		{
+			"id": "8146cae7-8bab-4a67-b412-af75549ff884",
+			"name": "/api/Voice/transcribe",
+			"url": "http://silentvoice.runasp.net/api/Voice/transcribe",
+			"time": 2700,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Audio transcribed and translated successfully!": true,
+				"Voice ID is a number": true,
+				"transcriptedTextEn is a string": true,
+				"transcriptedTextAr is a string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Audio transcribed and translated successfully!": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Voice ID is a number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"transcriptedTextEn is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"transcriptedTextAr is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2700
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Audio transcribed and translated successfully!": true,
+					"Voice ID is a number": true,
+					"transcriptedTextEn is a string": true,
+					"transcriptedTextAr is a string": true
+				}
+			]
+		},
+		{
+			"id": "7a6a155d-cb82-4781-8348-060cbb872a36",
+			"name": "/api/Voice/history",
+			"url": "http://silentvoice.runasp.net/api/Voice/history",
+			"time": 158,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is not empty": true,
+				"Each item's voiceID is a number greater than 0": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each item's voiceID is a number greater than 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is not empty": true,
+					"Each item's voiceID is a number greater than 0": true
+				}
+			]
+		},
+		{
+			"id": "f29653a5-f417-4338-9769-dd1d2f266f4b",
+			"name": "/api/Voice/:id",
+			"url": "http://silentvoice.runasp.net/api/Voice/128",
+			"time": 149,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"voiceID is a number greater than 0": true,
+				"audioUrl is a non-empty string and starts with \"/api/voice/audio/\"": true,
+				"transcriptedTextEn is a non-empty string": true,
+				"language is a string and equals \"en\" or \"ar\"": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"voiceID is a number greater than 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"audioUrl is a non-empty string and starts with \"/api/voice/audio/\"": {
+					"pass": 1,
+					"fail": 0
+				},
+				"transcriptedTextEn is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"language is a string and equals \"en\" or \"ar\"": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"voiceID is a number greater than 0": true,
+					"audioUrl is a non-empty string and starts with \"/api/voice/audio/\"": true,
+					"transcriptedTextEn is a non-empty string": true,
+					"language is a string and equals \"en\" or \"ar\"": true
+				}
+			]
+		},
+		{
+			"id": "e31e7b9b-497f-4d95-89c4-3982eb7d1231",
+			"name": "/api/Voice/audio/:filename",
+			"url": "http://silentvoice.runasp.net/api/Voice/audio/93be374e-1193-4c0e-a36c-364b896bda83.wav",
+			"time": 470,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response Content-Type is audio": true,
+				"Response body is not empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Content-Type is audio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				470
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response Content-Type is audio": true,
+					"Response body is not empty": true
+				}
+			]
+		},
+		{
+			"id": "95ea50ee-93a3-461e-baee-33fada02ad6e",
+			"name": "/api/Voice/:id",
+			"url": "http://silentvoice.runasp.net/api/Voice/128",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Message is not empty": true,
+				"Message equals 'Voice record deleted successfully.'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message equals 'Voice record deleted successfully.'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Message is not empty": true,
+					"Message equals 'Voice record deleted successfully.'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 8763,
+	"collection": {
+		"requests": [
+			{
+				"id": "a23dea24-0684-435a-acf6-fe550802a146",
+				"method": "POST"
+			},
+			{
+				"id": "fdadade9-d832-48b5-9cf7-58497947d6c0",
+				"method": "POST"
+			},
+			{
+				"id": "040fa4ed-3138-46d5-b170-52b38eb7ec92",
+				"method": "POST"
+			},
+			{
+				"id": "9f205c99-607d-4dca-bfa7-155bce9b2917",
+				"method": "POST"
+			},
+			{
+				"id": "6d752e74-a6c1-4e0e-ba0a-6c2eca1ea524",
+				"method": "GET"
+			},
+			{
+				"id": "174bc184-2dd3-4d17-9f9a-56b5b9bd5b93",
+				"method": "GET"
+			},
+			{
+				"id": "8146cae7-8bab-4a67-b412-af75549ff884",
+				"method": "POST"
+			},
+			{
+				"id": "7a6a155d-cb82-4781-8348-060cbb872a36",
+				"method": "GET"
+			},
+			{
+				"id": "f29653a5-f417-4338-9769-dd1d2f266f4b",
+				"method": "GET"
+			},
+			{
+				"id": "e31e7b9b-497f-4d95-89c4-3982eb7d1231",
+				"method": "GET"
+			},
+			{
+				"id": "95ea50ee-93a3-461e-baee-33fada02ad6e",
+				"method": "DELETE"
+			}
+		]
+	}
+}
